@@ -1,0 +1,10 @@
+[submodule "components/lvgl"]
+	path = components/lvgl
+	url = https://github.com/lvgl/lvgl.git
+	branch = releases/v8.3
+[submodule "components/lvgl_esp32_drivers"]
+	path = components/lvgl_esp32_drivers
+	url = https://github.com/acha666/lvgl_esp32_drivers.git
+[submodule "components/bq40z80"]
+	path = components/bq40z80
+	url = https://github.com/acha666/BQ40Z80_Lib.git

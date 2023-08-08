@@ -12,7 +12,7 @@ void vTaskI2C(void *arg)
 
     device.set_capm(1);
 
-    device_data.fcc = device.get_fcc();
+    device_data.fcc = device.get_full_charge_capacity();
     while (1)
     {
         device_data.voltage = device.get_voltage();
