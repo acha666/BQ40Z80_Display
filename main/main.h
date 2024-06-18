@@ -12,17 +12,14 @@
 #include "esp_heap_caps.h"
 #include "driver/spi_master.h"
 
-#include "lvgl.h"
-#include "lvgl_helpers.h"
 
-/**************  ***************/
-void my_timer(lv_timer_t *timer);
 void vTaskGUI(void *arg);
 void vTaskGUIUpdate(void *arg);
 void vTaskI2C(void *arg);
 void vTaskTouch(void *arg);
 
-extern QueueHandle_t myQueue;
+extern QueueHandle_t xGuiUpdateQueue;
+extern SemaphoreHandle_t xGuiSemaphore;
 
 typedef struct
 {

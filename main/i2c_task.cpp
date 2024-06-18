@@ -12,6 +12,9 @@ void vTaskI2C(void *arg)
 
     device.set_capm(1);
 
+    DA_STATUS_1 da_status_1;
+    device.read_da_status_1(&da_status_1);
+ 
     device_data.fcc = device.get_full_charge_capacity();
     while (1)
     {
@@ -23,7 +26,7 @@ void vTaskI2C(void *arg)
         // ESP_LOGI(TAG, "Current: %d mA", device.get_current());
         // ESP_LOGI(TAG, "Remaining Capacity: %d mAh", device.get_remaining_capacity());
         // ESP_LOGI(TAG, "FCC: %d mAh", device.get_fcc());
-        xQueueSend(myQueue, &device_data, portMAX_DELAY);
+        xQueueSend(xGuiUpdateQueue, &device_data, portMAX_DELAY);
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }

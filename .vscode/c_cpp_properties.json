@@ -18,8 +18,9 @@
                 ],
                 "limitSymbolsToIncludedHeaders": false
             },
-            "compilerPath": "${config:idf.toolsPathWin}/tools/xtensa-esp32s2-elf/esp-12.2.0_20230208/xtensa-esp32s2-elf/bin/xtensa-esp32s2-elf-gcc.exe",
-            "dotConfig": "sdkconfig"
+            "compilerPath": "${config:idf.toolsPathWin}\\tools\\xtensa-esp32s3-elf\\esp-12.2.0_20230208\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe",
+            "dotConfig": "sdkconfig",
+            "compileCommands": "build\\compile_commands.json"
         }
     ],
     "version": 4

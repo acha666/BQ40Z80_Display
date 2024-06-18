@@ -1,0 +1,16 @@
+{
+  "codename": "DINMedium34",
+  "ttf_path": "\\assets\\DIN-Medium.otf",
+  "bin_path": "\\assets\\ui_font_DINMedium34.bin",
+  "c_path": "\\assets\\ui_font_DINMedium34.c",
+  "cfg_path": "\\assets\\ui_font_DINMedium34.fcfg",
+  "size": 34,
+  "bpp": 4,
+  "letters": 3,
+  "ranges": [
+    "0x20-0xff"
+  ],
+  "symbols": "",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}
